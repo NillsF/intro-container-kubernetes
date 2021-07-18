@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-deployment-manual
+  labels:
+    app: python-demo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: python-demo
+  template:
+    metadata:
+      labels:
+        app: python-demo
+    spec:
+      containers:
+      - name: python-demo
+        image: nfacr.azurecr.io/python-webapp/demo:2
+        ports:
+        - containerPort: 8001
