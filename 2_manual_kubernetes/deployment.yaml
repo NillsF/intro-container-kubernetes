@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: python-demo
-        image: nfacr.azurecr.io/python-webapp/demo:2
+        image: nfacr.azurecr.io/spark-demo:1
         ports:
         - containerPort: 8001
