@@ -1,2 +1,2 @@
 # demo-docker-python
-This is a sample demo application to run end-to-end container based CI/CD.
+This is a sample demo application to run a container and later run that in Kubernetes.
